@@ -76,27 +76,42 @@ body .test .textContainer .button, html .test .textContainer .button {
 body .test .textContainer .button:hover, html .test .textContainer .button:hover {
   background-color: #449D44;
 }
-body .test .textContainer .footer, html .test .textContainer .footer {
-  position: absolute;
-  bottom: 0;
-}
-body .test .textContainer .footer footer .navContainer, html .test .textContainer .footer footer .navContainer {
-  display: flex;
-  padding-right: 40px;
-}
-body .test .textContainer .footer footer .navContainer li, html .test .textContainer .footer footer .navContainer li {
-  list-style: none;
-  padding-inline-start: 0px;
-}
-body .test .textContainer .footer footer .navContainer li a, html .test .textContainer .footer footer .navContainer li a {
-  text-decoration: none;
-  color: #000;
-}
-body .test .textContainer .mapContainer, html .test .textContainer .mapContainer {
+body .mapContainer, html .mapContainer {
   display: flex;
   width: 50%;
   justify-content: center;
   align-items: center;
+}
+body .mapContainer img, html .mapContainer img {
+  width: 500px;
+  height: 500px;
+}
+body .footer, html .footer {
+  position: absolute;
+  bottom: 0;
+}
+body .footer footer .navContainer, html .footer footer .navContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+body .footer footer .navContainer li, html .footer footer .navContainer li {
+  list-style-type: none;
+}
+body .footer footer .navContainer li a, html .footer footer .navContainer li a {
+  text-decoration: none;
+  color: #000;
+}
+@media only screen and (max-width: 1080px) {
+  body .textContainer, html .textContainer {
+    width: 100% !important;
+  }
+  body .mapContainer, html .mapContainer {
+    display: none;
+  }
+  body img, html img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
