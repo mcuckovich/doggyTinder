@@ -1,7 +1,7 @@
 body, html {
   margin: 0 auto;
   font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #959A9F;
+  color: #fff;
 }
 body .navWrapper, html .navWrapper {
   width: 100%;
@@ -38,7 +38,7 @@ body .navWrapper nav .navContainer .item, html .navWrapper nav .navContainer .it
   font-weight: 700;
 }
 body .navWrapper nav .navContainer .item:hover, html .navWrapper nav .navContainer .item:hover {
-  color: #D9F0F9;
+  color: #96daf7;
 }
 body .test, html .test {
   display: flex;
@@ -55,14 +55,15 @@ body .test .textContainer, html .test .textContainer {
 }
 body .test .textContainer .info, html .test .textContainer .info {
   width: 50%;
-  color: #2B343F;
+  color: #000;
 }
 body .test .textContainer .info h1, html .test .textContainer .info h1 {
   font-size: 33px;
   font-weight: 700;
 }
 body .test .textContainer .subInfo, html .test .textContainer .subInfo {
-  width: 60%;
+  width: 90%;
+  color: #000;
 }
 body .test .textContainer .button, html .test .textContainer .button {
   font-size: 18.72px;

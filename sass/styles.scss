@@ -1,6 +1,4 @@
-$light-gray: #959A9F;
-$dark-gray: #2B343F;
-$light-blue: #D9F0F9;
+$light-blue: rgb(150, 218, 247);
 $dark-blue: #3C7AC9;
 $light-green: #5DB85D;
 $dark-green: #449D44;
@@ -10,7 +8,7 @@ $black: #000;
 body,html {
   margin: 0 auto;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  color: $light-gray;
+  color: $white;
 	
 	.navWrapper{
 		width: 100%;
@@ -75,7 +73,7 @@ body,html {
 
     .info {
       width: 50%;
-      color: $dark-gray;
+      color: $black;
 
       h1 {
         font-size: 33px;
@@ -85,7 +83,8 @@ body,html {
     }
 
     .subInfo {
-      width: 60%;
+      width: 90%;
+      color: $black;
     }
 
     .button {
