@@ -1,0 +1,102 @@
+body, html {
+  margin: 0 auto;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #959A9F;
+}
+body .navWrapper, html .navWrapper {
+  width: 100%;
+  background-color: #3C7AC9;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+body .navWrapper nav ul li, html .navWrapper nav ul li {
+  list-style: none;
+}
+body .navWrapper nav ul li a, html .navWrapper nav ul li a {
+  text-decoration: none;
+}
+body .navWrapper nav .navContainer, html .navWrapper nav .navContainer {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 50px;
+}
+body .navWrapper nav .navContainer .logo, html .navWrapper nav .navContainer .logo {
+  flex: 1;
+  font-size: 26px;
+}
+body .navWrapper nav .navContainer .logo a, html .navWrapper nav .navContainer .logo a {
+  color: #fff;
+}
+body .navWrapper nav .navContainer .item, html .navWrapper nav .navContainer .item {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+body .navWrapper nav .navContainer .item:hover, html .navWrapper nav .navContainer .item:hover {
+  color: #D9F0F9;
+}
+body .test, html .test {
+  display: flex;
+}
+body .test .textContainer, html .test .textContainer {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+body .test .textContainer .info, html .test .textContainer .info {
+  width: 50%;
+  color: #2B343F;
+}
+body .test .textContainer .info h1, html .test .textContainer .info h1 {
+  font-size: 33px;
+  font-weight: 700;
+}
+body .test .textContainer .subInfo, html .test .textContainer .subInfo {
+  width: 60%;
+}
+body .test .textContainer .button, html .test .textContainer .button {
+  font-size: 18.72px;
+  margin-top: 50px;
+  padding: 10px 40px;
+  background-color: #5DB85D;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+body .test .textContainer .button:hover, html .test .textContainer .button:hover {
+  background-color: #449D44;
+}
+body .test .textContainer .footer, html .test .textContainer .footer {
+  position: absolute;
+  bottom: 0;
+}
+body .test .textContainer .footer footer .navContainer, html .test .textContainer .footer footer .navContainer {
+  display: flex;
+  padding-right: 40px;
+}
+body .test .textContainer .footer footer .navContainer li, html .test .textContainer .footer footer .navContainer li {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+body .test .textContainer .footer footer .navContainer li a, html .test .textContainer .footer footer .navContainer li a {
+  text-decoration: none;
+  color: #000;
+}
+body .test .textContainer .mapContainer, html .test .textContainer .mapContainer {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

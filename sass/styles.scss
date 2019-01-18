@@ -1,0 +1,133 @@
+$light-gray: #959A9F;
+$dark-gray: #2B343F;
+$light-blue: #D9F0F9;
+$dark-blue: #3C7AC9;
+$light-green: #5DB85D;
+$dark-green: #449D44;
+$white: #fff;
+$black: #000;
+
+body,html {
+  margin: 0 auto;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: $light-gray;
+	
+	.navWrapper{
+		width: 100%;
+    background-color: $dark-blue;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
+		
+	nav{
+		ul {
+			li{
+				list-style: none;
+				
+				a {
+					text-decoration: none;
+        }
+      }
+		}
+      .navContainer {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0 auto;
+        height: 50px;
+        
+        .logo {
+          flex: 1;
+          font-size: 26px;
+
+          a{
+            color: $white;
+          }
+        }
+
+        .item {
+          margin-left: 20px;
+          font-weight: 600;
+          font-size: 15px;
+          color: $white;
+          font-weight: 700;
+        }
+
+        .item:hover {
+          color: $light-blue;
+        }
+      }
+    }
+  }
+.test {
+  display: flex;
+
+  .textContainer {
+    background-color: $white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+
+    .info {
+      width: 50%;
+      color: $dark-gray;
+
+      h1 {
+        font-size: 33px;
+        font-weight: 700;
+
+      }
+    }
+
+    .subInfo {
+      width: 60%;
+    }
+
+    .button {
+      font-size: 18.72px;
+      margin-top: 50px;
+      padding: 10px 40px;
+      background-color: $light-green;
+      border-radius: 25px;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: $dark-green;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      footer {
+
+        .navContainer {
+          display: flex;
+          padding-right: 40px;
+            li {
+              list-style: none;
+              padding-inline-start: 0px;
+              a {
+                text-decoration: none;
+                color: $black;
+              }
+            }
+        }
+      }
+    }
+  .mapContainer {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+}
+
+}
