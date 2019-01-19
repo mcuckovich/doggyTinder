@@ -1,6 +1,5 @@
 body, html {
   margin: 0 auto;
-  height: 100%;
   font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 body nav, html nav {
@@ -13,7 +12,6 @@ body nav .navContainer, html nav .navContainer {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  height: 50px;
   list-style: none;
 }
 body nav .navContainer .logo, html nav .navContainer .logo {
@@ -29,7 +27,6 @@ body nav .navContainer .logo img, html nav .navContainer .logo img {
 body nav .navContainer a, html nav .navContainer a {
   color: #fff;
   text-decoration: none;
-  list-style: none;
 }
 body nav .navContainer .item, html nav .navContainer .item {
   color: #fff;
@@ -55,8 +52,8 @@ body main .textContainer, html main .textContainer {
 body main .textContainer .button, html main .textContainer .button {
   font-size: 18.72px;
   margin-top: 50px;
-  padding: 10px 40px;
   background-color: #5DB85D;
+  padding: 10px 40px;
   border-radius: 25px;
   color: #fff;
   cursor: pointer;
