@@ -1,5 +1,5 @@
-$light-blue: rgb(150, 218, 247);
-$dark-blue: #3C7AC9;
+$light-blue: #0074E3;
+$dark-blue: #076CD2;
 $light-green: #5DB85D;
 $dark-green: #449D44;
 $white: #fff;
@@ -7,85 +7,64 @@ $black: #000;
 
 body,html {
   margin: 0 auto;
+  height: 100%;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  color: $white;
 	
-	.navWrapper{
-		width: 100%;
-    background-color: $dark-blue;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    
-		
-	nav{
-		ul {
-			li{
-				list-style: none;
-				
-				a {
-					text-decoration: none;
-        }
-      }
-		}
-      .navContainer {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        margin: 0 auto;
-        height: 50px;
-        
-        .logo {
-          flex: 1;
-          font-size: 26px;
+nav{
+  background-color: $dark-blue;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
+  .navContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    list-style: none;
 
-          a{
-            color: $white;
-          }
-        }
-
-        .item {
-          margin-left: 20px;
-          font-weight: 600;
-          font-size: 15px;
-          color: $white;
-          font-weight: 700;
-        }
-
-        .item:hover {
-          color: $light-blue;
-        }
+    .logo {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      
+      img {
+      width: 75px;
+      margin-right: 10px;
       }
     }
+
+      a{
+        color: $white;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .item {
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .item:hover {
+        color: $light-green;
+      }
   }
-.test {
+}
+
+main {
   display: flex;
+  height: 100vh;
+  padding: 0 20px;
 
   .textContainer {
-    background-color: $white;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 50%;
-
-    .info {
-      width: 50%;
-      color: $black;
-
-      h1 {
-        font-size: 33px;
-        font-weight: 700;
-
-      }
-    }
-
-    .subInfo {
-      width: 90%;
-      color: $black;
-    }
+    color: $black;
 
     .button {
       font-size: 18.72px;
@@ -104,45 +83,45 @@ body,html {
 }
 .mapContainer {
   display: flex;
-  width: 50%;
   justify-content: center;
   align-items: center;
+  display: none;
+  width: 50%;
 
   img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 }
-.footer {
+  footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
 
-  footer {
-    .navContainer {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      li {
-        list-style-type: none;
-        a {
-          text-decoration: none;
-          color: $black;
-        }
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: $black;
       }
     }
   }
 }
-@media only screen and (max-width: 1080px) {
-  .textContainer
-  {
-    width: 100% !important;
-  }
-  .mapContainer {
-    display: none;
-  }
-  img {
-    display: none;
+
+  @media only screen and (min-width: 1080px) {
+
+    .textContainer
+    {
+      width: 50% !important;
+    }
+    
+    .mapContainer {
+      display: inherit;
+    }
   }
 }
 
-}

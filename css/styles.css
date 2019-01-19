@@ -1,71 +1,58 @@
 body, html {
   margin: 0 auto;
+  height: 100%;
   font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #fff;
 }
-body .navWrapper, html .navWrapper {
-  width: 100%;
-  background-color: #3C7AC9;
+body nav, html nav {
+  background-color: #076CD2;
   position: fixed;
-  top: 0;
-  z-index: 2;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-body .navWrapper nav ul li, html .navWrapper nav ul li {
-  list-style: none;
-}
-body .navWrapper nav ul li a, html .navWrapper nav ul li a {
-  text-decoration: none;
-}
-body .navWrapper nav .navContainer, html .navWrapper nav .navContainer {
+body nav .navContainer, html nav .navContainer {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  margin: 0 auto;
   height: 50px;
+  list-style: none;
 }
-body .navWrapper nav .navContainer .logo, html .navWrapper nav .navContainer .logo {
+body nav .navContainer .logo, html nav .navContainer .logo {
   flex: 1;
-  font-size: 26px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
-body .navWrapper nav .navContainer .logo a, html .navWrapper nav .navContainer .logo a {
+body nav .navContainer .logo img, html nav .navContainer .logo img {
+  width: 75px;
+  margin-right: 10px;
+}
+body nav .navContainer a, html nav .navContainer a {
   color: #fff;
+  text-decoration: none;
+  list-style: none;
 }
-body .navWrapper nav .navContainer .item, html .navWrapper nav .navContainer .item {
-  margin-left: 20px;
-  font-weight: 600;
+body nav .navContainer .item, html nav .navContainer .item {
+  color: #fff;
   font-size: 15px;
-  color: #fff;
   font-weight: 700;
 }
-body .navWrapper nav .navContainer .item:hover, html .navWrapper nav .navContainer .item:hover {
-  color: #96daf7;
+body nav .navContainer .item:hover, html nav .navContainer .item:hover {
+  color: #5DB85D;
 }
-body .test, html .test {
+body main, html main {
   display: flex;
-}
-body .test .textContainer, html .test .textContainer {
-  background-color: #fff;
   height: 100vh;
+  padding: 0 20px;
+}
+body main .textContainer, html main .textContainer {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 50%;
-}
-body .test .textContainer .info, html .test .textContainer .info {
-  width: 50%;
   color: #000;
 }
-body .test .textContainer .info h1, html .test .textContainer .info h1 {
-  font-size: 33px;
-  font-weight: 700;
-}
-body .test .textContainer .subInfo, html .test .textContainer .subInfo {
-  width: 90%;
-  color: #000;
-}
-body .test .textContainer .button, html .test .textContainer .button {
+body main .textContainer .button, html main .textContainer .button {
   font-size: 18.72px;
   margin-top: 50px;
   padding: 10px 40px;
@@ -74,44 +61,43 @@ body .test .textContainer .button, html .test .textContainer .button {
   color: #fff;
   cursor: pointer;
 }
-body .test .textContainer .button:hover, html .test .textContainer .button:hover {
+body main .textContainer .button:hover, html main .textContainer .button:hover {
   background-color: #449D44;
 }
 body .mapContainer, html .mapContainer {
   display: flex;
-  width: 50%;
   justify-content: center;
   align-items: center;
+  display: none;
+  width: 50%;
 }
 body .mapContainer img, html .mapContainer img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
-body .footer, html .footer {
+body footer, html footer {
   position: absolute;
   bottom: 0;
-}
-body .footer footer .navContainer, html .footer footer .navContainer {
-  display: flex;
-  align-items: center;
   width: 100%;
 }
-body .footer footer .navContainer li, html .footer footer .navContainer li {
+body footer .footerContainer, html footer .footerContainer {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+body footer .footerContainer li, html footer .footerContainer li {
   list-style-type: none;
 }
-body .footer footer .navContainer li a, html .footer footer .navContainer li a {
+body footer .footerContainer li a, html footer .footerContainer li a {
   text-decoration: none;
   color: #000;
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (min-width: 1080px) {
   body .textContainer, html .textContainer {
-    width: 100% !important;
+    width: 50% !important;
   }
   body .mapContainer, html .mapContainer {
-    display: none;
-  }
-  body img, html img {
-    display: none;
+    display: inherit;
   }
 }
 
